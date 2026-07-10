@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!--cabezera-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="./calculadora.js"></script>
+</head>
+    <!--cuerpo de la pagina-->
+<body>
+    <header class="bg-dark py-3 text-center text-center text-white"> <h2>MI PRIMERA CALCULADORA</h2></header>
+    <div class="m-3">
+        <!--<h1 class="text-success" text-center>MI PRIMERA CALCULADORA</h1>-->
+        <div class="text-center">
+            <label for="n1">Ingrese el primer valor: 
+                <input id="n1" class="form-control" type="number">
+            </label>
+        </div>
+
+        <br>
+
+        <div class="text-center">
+            <label for="n2">Ingrese el segundo valor: 
+                <input id="n2" class="form-control" type="number">
+            </label>
+        </div>
+
+        <br>
+
+        <div class="text-center">
+            <label>Resultado: 
+                <input id="resultado" class="form-control" type="number" disabled>
+            </label>
+        </div>
+
+        <br>
+
+        <div class="text-center">
+            <button class="btn btn-warning" onclick="suma()">SUMAR</button>
+            <button class="btn btn-danger" onclick="resta()">RESTAR</button>
+            <button class="btn btn-success" onclick="multiplicacion()">MULRIPLICAR</button>
+            <button class="btn btn-primary" onclick="division()">DIVIDIR</button>
+
+
+        </div>
+        
+    </div>
+
+    <footer class="bg-secondary text-center text-dark py-3 fixed-bottom"> &copy; PAMELA ESPINOLA-TODOS LOS DERECHOS RESERVADOS-2026</footer>
+</body>
+</html>
